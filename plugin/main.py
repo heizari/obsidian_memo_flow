@@ -66,14 +66,8 @@ class ObsidianDailyNote(Flox):
                 daily_note_path.parent.mkdir(parents=True, exist_ok=True)
 
                 assert template_path.exists(), f"{template_path=} is not exists."
-                if template_path.exists():
-                    shutil.copy2(template_path, daily_note_path)
-                    message = "デイリーノートをテンプレートから作成しました"
-                else:
-                    # Create empty file if template doesn't exist
-                    with open(daily_note_path, 'w', encoding='utf-8') as f:
-                        f.write(f"# {today}\n\n")
-                    message = "Create daily note."
+			    shutil.copy2(template_path, daily_note_path)
+			    message = "デイリーノートをテンプレートから作成しました"
             else:
                 message = "Add memo: "
 
