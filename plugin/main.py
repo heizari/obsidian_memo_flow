@@ -10,7 +10,6 @@ class ObsidianDailyNote(Flox):
     @property
     def vault_path(self):
         """Get vault path from settings or default"""
-        # return Path("C:\\Users\\w.sato\\Documents\\obsidian_vault")
         custom_path = self.settings.get("vault_path", "").strip()
         if custom_path:
             return Path(custom_path)
@@ -45,14 +44,6 @@ class ObsidianDailyNote(Flox):
             subtitle=f"Will append to {datetime.now().strftime('%Y-%m-%d')}.md with timestamp",
             method=self.add_to_daily_note,
             parameters=[query]
-        ))
-
-        # Settings option
-        results.append(self.add_item(
-            title="Open settings",
-            subtitle="Configure vault path and directories",
-            method=self.open_setting_dialog,
-            parameters=[]
         ))
 
         return results
