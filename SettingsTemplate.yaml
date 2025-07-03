@@ -1,0 +1,21 @@
+body:
+  - type: input
+    attributes:
+      description: Welcome to the settings page for my plugin. Here you can configure the plugin to your liking.
+      name: vault_name
+      defaultValue: obsidian_vault
+  - type: input
+    attributes: daily note directory name
+      name: daily_note_dir
+      defaultValue: note_dir
+  - type: input
+    attributes:
+      name: template_dir
+      description: obsidian templates directory
+      defaultValue: templates
+  - type: input
+    attributes:
+      name: template_filename
+      description: daily note template name
+      defaultValue: daily_note_template.md
+

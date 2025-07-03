@@ -7,43 +7,6 @@
   "Version": "1.0.0",
   "Language": "python",
   "Website": "https://github.com/heizari/obsidian_memo_flow.git",
-  "ExecuteFileName": "run.py",
-  "IcoPath": "icon.png",
-  "Settings": [
-    {
-      "Key": "vault_name",
-      "Type": "textbox",
-      "Value": "obsidian_vault",
-      "Title": "Vault Name",
-      "Tooltip": "Name of your Obsidian vault folder"
-    },
-    {
-      "Key": "daily_note_dir",
-      "Type": "textbox",
-      "Value": "002_daily_note",
-      "Title": "Daily Note Directory",
-      "Tooltip": "Relative path to daily notes directory within vault"
-    },
-    {
-      "Key": "template_dir",
-      "Type": "textbox",
-      "Value": "004_template",
-      "Title": "Template Directory",
-      "Tooltip": "Relative path to templates directory within vault"
-    },
-    {
-      "Key": "template_filename",
-      "Type": "textbox",
-      "Value": "daily_note.md",
-      "Title": "Template Filename",
-      "Tooltip": "Name of the daily note template file"
-    },
-    {
-      "Key": "vault_path",
-      "Type": "textbox",
-      "Value": "",
-      "Title": "Custom Vault Path (Optional)",
-      "Tooltip": "Full path to vault (leave empty to use ~/vault_name)"
-    }
-  ]
+  "ExecuteFileName": "./run.py",
+  "IcoPath": "icon.png"
 }

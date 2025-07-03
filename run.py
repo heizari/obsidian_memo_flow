@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 
 plugindir = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(plugindir)
@@ -10,3 +10,4 @@ from plugin.main import ObsidianDailyNote
 
 if __name__ == "__main__":
     ObsidianDailyNote()
+

@@ -1,11 +1,16 @@
-from pathlib import Path
-from datetime import datetime
+import logging
 import shutil
+from datetime import datetime
+from pathlib import Path
+
 from flox import Flox
+
+logging.basicConfig(level=logging.DEBUG)
 
 class ObsidianDailyNote(Flox):
     def __init__(self):
         super().__init__()
+        self.logger.debug('test')
 
     @property
     def vault_path(self):
@@ -66,8 +71,8 @@ class ObsidianDailyNote(Flox):
                 daily_note_path.parent.mkdir(parents=True, exist_ok=True)
 
                 assert template_path.exists(), f"{template_path=} is not exists."
-			    shutil.copy2(template_path, daily_note_path)
-			    message = "デイリーノートをテンプレートから作成しました"
+                shutil.copy2(template_path, daily_note_path)
+                message = "デイリーノートをテンプレートから作成しました"
             else:
                 message = "Add memo: "
 
